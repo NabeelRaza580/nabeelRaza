@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="hotel_search3.html">Hotel Search</a></li>
+        <li><a href="login4.html">Login / Sign Up</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search">
+    <h2>Find Flights</h2>
+    <form id="flight-search-form">
+      <label for="from">From</label>
+      <input type="text" id="from" placeholder="Departure city" required>
+
+      <label for="to">To</label>
+      <input type="text" id="to" placeholder="Destination city" required>
+
+      <label for="departure-date">Departure Date</label>
+      <input type="date" id="departure-date" required>
+
+      <label for="return-date">Return Date (optional)</label>
+      <input type="date" id="return-date">
+
+      <label for="passengers">Passengers</label>
+      <input type="number" id="passengers" min="1" required>
+
+      <button type="submit" class="btn">Search Flights</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Flight and Hotel Comparison Tool</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

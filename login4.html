@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="flight_search2.html">Flight Search</a></li>
+        <li><a href="hotel_search3.html">Hotel Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="login-signup">
+    <h2>Login / Sign Up</h2>
+    <form id="login-form" onsubmit="return handleLogin(event)">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <h3>Don't have an account?</h3>
+    <button class="btn" onclick="location.href='singup.html'">Sign Up</button>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Flight and Hotel Comparison Tool</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
